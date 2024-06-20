@@ -91,8 +91,5 @@ python app.py
 
 ## Demo
 
-<video width="800" height="360" controls>
-  <source src="Demo/Finetune.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Demo](Demo/Finetune.gif)
 
