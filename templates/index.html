@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese LLM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LLM</h1>
+        <form method="post">
+            <label for="user_ins">Enter Instruction:</label><br>
+            <!-- Increase the size of the text field -->
+            <textarea id="user_ins" name="user_ins" rows="20" cols="100" required></textarea><br>
+
+            <label for="user_inp">Enter Input (Keep Empty if needed):</label><br>
+            <!-- Increase the size of the text field -->
+            <textarea id="user_inp" name="user_inp" rows="20" cols="100"></textarea><br>
+
+            <button type="submit">Enter</button>
+        </form>
+
+        <!-- Add this block to display file content -->
+        {% if output_text %}
+        <h2>Output:</h2>
+        <pre class="output_text">{{ output_text }}</pre>
+        {% endif %}
+
+    </div>
+</body>
+</html>

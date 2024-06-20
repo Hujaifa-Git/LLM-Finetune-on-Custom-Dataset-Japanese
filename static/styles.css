@@ -1,0 +1,13 @@
+.container {
+
+    max-width: 50vw;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.output_text{
+    width: 80%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
